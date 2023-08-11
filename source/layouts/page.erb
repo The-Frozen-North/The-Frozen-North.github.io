@@ -1,0 +1,11 @@
+<% wrap_layout :layout do %>
+    <div class="container px-4 px-lg-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h1><%= current_page.data.title %></h1>
+          <hr class="divider divider-left">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+<% end %>

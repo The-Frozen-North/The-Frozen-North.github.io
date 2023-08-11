@@ -1,0 +1,1 @@
+window.addEventListener("DOMContentLoaded",(()=>{var n=()=>{const n=document.querySelector("#mainNav");n&&(0===window.scrollY?n.classList.remove("navbar-shrink"):n.classList.add("navbar-shrink"))};n(),document.addEventListener("scroll",n)}));
