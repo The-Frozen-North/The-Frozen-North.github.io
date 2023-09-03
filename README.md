@@ -1,17 +1,11 @@
-# Middleman + Bootstrap
+## Pre-requisites
 
-> Starter Kit to build static websites fast
-
-Powered by:
-
-- [Middleman](https://middlemanapp.com)
-- [Bootstrap v5](https://getbootstrap.com)
-
-Check out the demo site 👉 [here](https://middleman-bootstrap.vercel.app)!
+Ruby 🔧
 
 ## Install 🔧
 
-Clone this repository (or use the GitHub *template* button), then `cd` into the folder and install all dependencies:
+1. Clone repository
+2. Run `bundle install`
 
 ```
 > bin/setup
@@ -19,16 +13,8 @@ Clone this repository (or use the GitHub *template* button), then `cd` into the 
 
 ## Run 🏃
 
-Start a local development server:
-
-```
-> bin/start
-```
+`bundle exec middleman server`
 
 ## Build 📦
 
-Build the static files:
-
-```
-> bin/build
-```
+`bundle exec middleman build`

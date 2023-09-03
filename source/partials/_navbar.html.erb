@@ -1,13 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top py-2" id="mainNav">
   <div class="container-fluid px-4 px-lg-5">
     <a class="navbar-brand" href="/">
-        <img src="images/logo.png" alt="The Frozen North" height="50">
+        <%= image_tag 'logo.png', alt: 'The Frozen North', height: 50 %>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ms-auto my-2 my-lg-0">
         <li class="nav-item">
-            <% link_to 'https://discord.gg/qKqRUDZ', class: "nav-link d-flex #{'active' if is_page?('mechanics')}" do %>
+            <% link_to 'https://discord.gg/qKqRUDZ', class: "nav-link d-flex" do %>
                 <span class="material-symbols-outlined me-2">chat</span> Discord
             <% end %>
         </li>
@@ -22,23 +22,33 @@
             <% end %>
         </li>
         <li class="nav-item">
-            <% link_to 'mechanics', class: "nav-link d-flex #{'active' if is_page?('mechanics')} disabled" do %>
-                <span class="material-symbols-outlined me-2">settings</span> Mechanics (WIP)
+            <% link_to 'world', class: "nav-link d-flex #{'active' if is_page?('world')}" do %>
+                <span class="material-symbols-outlined me-2">globe</span> World
+            <% end %>
+        </li>         
+        <li class="nav-item">
+            <% link_to 'gallery', class: "nav-link d-flex #{'active' if is_page?('gallery')} disabled" do %>
+                <span class="material-symbols-outlined me-2">photo</span> Gallery
+            <% end %>
+        </li>        
+        <li class="nav-item">
+            <% link_to 'mechanics', class: "nav-link d-flex #{'active' if is_page?('mechanics')}" do %>
+                <span class="material-symbols-outlined me-2">settings</span> Mechanics
             <% end %>
         </li>
         <li class="nav-item">
             <% link_to 'areas', class: "nav-link d-flex #{'active' if is_page?('areas')} disabled" do %>
-                <span class="material-symbols-outlined me-2">map</span> Areas (WIP)
+                <span class="material-symbols-outlined me-2">map</span> Areas
             <% end %>
         </li>
         <li class="nav-item">
             <% link_to 'items', class: "nav-link d-flex #{'active' if is_page?('items')} disabled" do %>
-                <span class="material-symbols-outlined me-2">backpack</span> Items (WIP)
+                <span class="material-symbols-outlined me-2">shopping_bag</span> Items
             <% end %>
         </li>
         <li class="nav-item">
             <% link_to 'enemies', class: "nav-link d-flex #{'active' if is_page?('enemies')} disabled" do %>
-                <span class="material-symbols-outlined me-2">swords</span> Enemies (WIP)
+                <span class="material-symbols-outlined me-2">swords</span> Enemies
             <% end %>
         </li>
         <li class="nav-item">

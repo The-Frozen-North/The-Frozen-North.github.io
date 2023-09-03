@@ -15,3 +15,5 @@ configure :build do
 
   config[:build_dir] = "docs"
 end
+
+page "/index.html", layout: "index_layout"
