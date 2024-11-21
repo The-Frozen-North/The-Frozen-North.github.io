@@ -7,18 +7,23 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ms-auto my-2 my-lg-0">
         <li class="nav-item">
-            <% link_to 'https://discord.gg/qKqRUDZ', class: "nav-link d-flex" do %>
+            <% link_to 'https://discord.gg/qKqRUDZ', class: "nav-link d-flex", target: '_blank' do %>
                 <span class="material-symbols-outlined me-2">chat</span> Discord
             <% end %>
         </li>
         <li class="nav-item">
-            <% link_to 'https://github.com/The-Frozen-North/tfn-module/', class: "nav-link d-flex" do %>
+            <% link_to 'https://github.com/The-Frozen-North/tfn-module/', class: "nav-link d-flex", target: '_blank' do %>
                 <span class="material-symbols-outlined me-2">code</span> Source Code
             <% end %>
         </li>
         <li class="nav-item">
-            <% link_to 'https://github.com/The-Frozen-North/tfn-module/wiki', class: "nav-link d-flex" do %>
-                <span class="material-symbols-outlined me-2">help</span> Wiki
+            <% link_to 'https://github.com/The-Frozen-North/tfn-module/wiki', class: "nav-link d-flex", target: '_blank' do %>
+                <span class="material-symbols-outlined me-2">help</span> Builder's Wiki
+            <% end %>
+        </li>
+        <li class="nav-item">
+            <% link_to 'server-rules', class: "nav-link d-flex" do %>
+                <span class="material-symbols-outlined me-2">fact_check</span> Server Rules
             <% end %>
         </li>
         <li class="nav-item">
@@ -32,8 +37,8 @@
             <% end %>
         </li>        
         <li class="nav-item">
-            <% link_to 'mechanics', class: "nav-link d-flex #{'active' if is_page?('mechanics')}" do %>
-                <span class="material-symbols-outlined me-2">settings</span> Mechanics
+            <% link_to 'gameplay-mechanics', class: "nav-link d-flex #{'active' if is_page?('gameplay-mechanics')}" do %>
+                <span class="material-symbols-outlined me-2">settings</span> Gameplay Mechanics
             <% end %>
         </li>
         <li class="nav-item">
@@ -52,7 +57,7 @@
             <% end %>
         </li>
         <li class="nav-item">
-            <% link_to 'https://docs.google.com/document/d/1ox0UqusxPWsaKzlo1jr_FUisf5GZO6NeHD5JQ2g5Ftc/edit', class: "nav-link d-flex" do %>
+            <% link_to 'https://docs.google.com/document/d/1ox0UqusxPWsaKzlo1jr_FUisf5GZO6NeHD5JQ2g5Ftc/edit', class: "nav-link d-flex", target: '_blank' do %>
                 <span class="material-symbols-outlined me-2">menu_book</span> Walkthrough
             <% end %>
         </li>
